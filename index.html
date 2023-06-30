@@ -13,25 +13,27 @@
 <body>
     <!-- Header Section -->
     <section class="header" id="header">
-<nav>
-    <a href="college.html"><img src="./image/iit.png" alt="logo"></a>
-    <div class="nav-links" id="navLinks">
-        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-        <ul>
-            <li><a href="#header">HOME</a></li>
-            <li><a href="#course">COURSES</a></li>
-            <li><a href="#our-branches">OUR BRANCHES</a></li>
-            <li><a href="#facilities">BLOGS</a></li>
-            <li><a href="#footer">CONTACT US</a></li>
-        </ul>
+        <a id="top"></a>
+        <nav>
+            <a href="college.html"><img src="./image/iit.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#course">COURSES</a></li>
+                    <li><a href="#our-branches">OUR BRANCHES</a></li>
+                    <li><a href="#facilities">BLOGS</a></li>
+                    <li><a href="#footer">CONTACT US</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
         
-    </div>
-    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-</nav>
-<div class="text-box">
-    <h1>India's Best University</h1>
-    <p>This University Is One Of The Top University In India <br> We Make The Best Leader's </p>
-    <a href="" class="btn">Visit Us To Know More</a>
+        <div class="text-box">
+            <h1>India's Best University</h1>
+            <p>This University Is One Of The Top University In India <br> We Make The Best Leader's </p>
+            <a href="" class="btn">Visit Us To Know More</a>
 </div>
     </section>
 
@@ -132,8 +134,12 @@
 
 <!-- Footer Section -->
 <footer id="footer">
-<h2>Contact Us </h2>
-<p>Feel Free To Contact Us</p>
+    
+    <!-- Back-to-top -->
+    <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <h2>Contact Us </h2>
+    <p>Feel Free To Contact Us</p>
     <div class="social-links">
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-instagram"></i>
@@ -142,6 +148,7 @@
         <i class="fa-solid fa-envelope-circle-check"></i>
     </div>
     <p class="para">© 2022, Codewithvenish. All Rights Reserved.</p>
+    
 </footer>
 
 

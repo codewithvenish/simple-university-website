@@ -389,3 +389,23 @@ footer > .para{
     /* top:0; */
     font-size:16px;
 }
+
+
+/* Back-to-top */
+.back-to-top {
+    position: fixed;
+    bottom:30px;
+    right: 0;
+    display: none; 
+    color: #ffffff;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 50px;
+    width:20px;
+    font-size:13px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .back-to-top:hover {
+    opacity: 0.8;
+  }
