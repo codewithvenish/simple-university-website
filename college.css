@@ -36,7 +36,7 @@ nav .nav-links{
 nav .nav-links ul li{
     display:inline-block;
     list-style:none;
-    padding: 6px 20px;
+    margin: 6px 20px;
     position:relative;
 }
 nav .nav-links ul li a{
@@ -48,15 +48,19 @@ nav .nav-links ul li a{
 }
 nav .nav-links ul li::after{
     content:'';
-    width:0%;
+    position: absolute;
     height:3px;
-    display:block;
-    background:rgb(253, 105, 130);
-    margin:auto;
-    transition:0.6s;
+    width: 100%;
+    background-color: lightcoral;
+    bottom:-5px;
+    left:0;
+    transition:transform .6s ;
+    transform:scale(0);
+    transform-origin:right;
 }
 nav .nav-links ul li:hover::after{
-    width:100%;
+    transform:scale(1);
+    transform-origin:left;
 }
 .text-box{
     position:absolute; 
@@ -80,16 +84,15 @@ nav .nav-links ul li:hover::after{
     color:white;
     font-size:16px;
     padding:10px 35px;
-    border:2px solid white;
+    border:1px solid white;
     background:transparent;
     text-decoration:none;
     cursor:pointer;
     transition:0.5s;
 }
 .text-box .btn:hover{
-    border-radius:5px;
+    border-radius:-5px;
     background-color: lightcoral;
-    border:2px solid lightcoral;
     
 }
 nav .fa-solid{
